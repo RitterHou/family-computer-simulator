@@ -12,3 +12,5 @@
 *.out
 
 /.idea
+*.nes
+family-computer-simulator*
