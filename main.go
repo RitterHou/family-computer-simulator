@@ -21,11 +21,6 @@ func init() {
 }
 
 func main() {
-	romName := flag.Arg(0)
-	if romName == "" {
-		log.Fatal("no game rom file found")
-	}
-
-	rom := readFile(romName)
-	log.Println(rom)
+	rom := loadGameRom()
+	fmt.Printf("%#v\n", rom)
 }
